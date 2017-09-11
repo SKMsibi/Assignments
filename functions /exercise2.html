@@ -4,15 +4,33 @@
     <meta charset=utf-8 />
     <title>Compute the average marks and grade</title>
     <script>
-        function calculateAverage(marks){
-            var average= 0;
+        function calculateAverage(marks) {
+            var grade;
+            var average = 0;
             var array = Array.from(arguments);
             for (var i = 0; i < array.length; i++) {
                 average += array[i] / array.length;
             }
-            return average;
+            if (average < 60) {
+                grade = "F";
+            } else if (average < 70) {
+                grade = "D";
+            } else if (average < 80) {
+                grade = "C";
+            } else if (average < 90) {
+                grade = "B";
+            } else {
+                grade = "A";
+            }
+            return `The average is ${average} and the grade ${grade}`
         }
-        console.log(calculateAverage(60,77,88,95,45));
+        console.log(calculateAverage(60, 77, 88, 95, 45));
+        console.log(calculateAverage(2, 7, 8, 5, 5));
+        console.log(calculateAverage(10, 27, 28, 25, 25));
+        console.log(calculateAverage(40, 47, 48, 45, 35));
+        console.log(calculateAverage(50, 67, 68, 65, 65));
+        console.log(calculateAverage(80, 87, 88, 85, 75));
+        console.log(calculateAverage(100, 100, 100, 100, 100));
     </script>
 
 </head>
