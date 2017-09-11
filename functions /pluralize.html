@@ -1,24 +1,31 @@
 <DOCTYPE! html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>The Pluralizer</title>
+	<html>
 
-<script>
-function pluralize(number, noun){
-	var pluralized ;
-	if(number > 1 && noun.match(/e/g).length > 1){
-		pluralized = number + noun;
-	}else if(number > 1 && noun.match(/!e/g) < 1){
-		pluralized = number + noun + "s";
-	}else if(number == 1){
-		pluralized = number + noun;
-	}
-console.log(pluralized)
-}
-this.pluralize(2, "dog");
-</script>		 
-</head>
-<body>
-</body>
-</html>
+	<head>
+		<meta charset="utf-8">
+		<title>The Pluralizer</title>
+
+		<script>
+			function pluralize(number, noun) {
+				var collectiveNouns = { sheep: "sheep", goose: "geese", tooth: "teeth" };
+				var pluralized;
+				if (number > 1) {
+					pluralized = number + noun + "s";
+				} else if (number == 1) {
+					pluralized = number + noun;
+				} else if (noun == collectiveNouns.forEach(function (noun) {
+					pluralized = noun;
+				})
+				)
+
+					console.log(pluralized)
+			}
+			this.pluralize(2, "dog");
+
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+	</html>

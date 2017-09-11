@@ -16,10 +16,11 @@ function helloWorld(code){
 	else {
 		answer = "Hello, World";
     }
-console.log(answer)
+	return answer;
 }
-//this.helloWorld();
-this.helloWorld(false);
+var greeting = this.helloWorld(false);
+
+console.log(greeting);
 </script>		 
 </head>
 <body>
