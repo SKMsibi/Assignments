@@ -7,21 +7,22 @@
 <script>
 function assignGrade(score){
 	var grade ;
-	if(score < 0 && score > 19){
+	if(score >= 0 && score <= 19){
 		grade = "F";
-	}else if(score < 20 && score > 39){
+	}else if(score >= 20 && score <= 39){
 		grade = "D";
-	}else if(score < 40 && score > 59){
+	}else if(score >= 40 && score <= 59){
 		grade = "C";
-	}else if(score < 60 && score > 79){
+	}else if(score >= 60 && score <= 79){
 		grade = "B";
-	}else if(score < 80 && score >100){
+	}else if(score >= 80 && score <= 100){
 		grade = "A";
 	}
 console.log(grade)
 }
+this.assignGrade(27);
 </script>		 
 </head>
-<body onload="assignGrade(34)">
+<body>
 </body>
 </html>
