@@ -5,16 +5,21 @@
 <title>The World Translater</title>
 
 <script>
-function helloWorld(code="en"){
+function helloWorld(code){
 	var answer ;
 	if(code == "zu"){
 		answer = "Yebo, mhlaba";
-	}else if(code == "en"){
-		answer = "Hello, World";
+	} 
+    else if(code == "afr"){
+		answer = "Hello wereld";
 	}
+	else {
+		answer = "Hello, World";
+    }
 console.log(answer)
 }
-this.helloWorld();
+//this.helloWorld();
+this.helloWorld(false);
 </script>		 
 </head>
 <body>
