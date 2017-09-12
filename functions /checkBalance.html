@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>if statement example</title>
+    <script>
+        function balanceCheck() {
+            var balance = document.getElementById("value").value
+            var limit = 500;
+            var response;
+            if (balance > limit) {
+                response = "You have enough money to withdraw";
+            } else {
+                response = "You don not have enough money to withdraw";
+            }
+            console.log(response);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="tel" id="value" name="value" />
+    <button onclick="balanceCheck()">
+</body>
+</html>
