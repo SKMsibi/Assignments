@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Compute the average marks and grade</title>
+    <script>
+        function calculateAverage(marks) {
+            var average = 0;
+
+            for (var i = 0; i < marks.length; i++) {
+                average += marks[i] / marks.length;
+            }
+
+            return average;
+        }
+        function determineGrade(average) {
+            var grade;
+            if (average < 60) {
+                grade = "F";
+            } else if (average < 70) {
+                grade = "D";
+            } else if (average < 80) {
+                grade = "C";
+            } else if (average <= 89) {
+                grade = "B";
+            } else if (average >= 90 && average <= 100) {
+                grade = "A";
+            }
+            return grade;
+        }
+
+        var myStudentMarks = [100, 100, 100, 100, 100];
+        var myStudentAverage = calculateAverage(myStudentMarks);
+        console.log(calculateAverage(myStudentMarks));
+        console.log(this.determineGrade(myStudentAverage));
+
+        var myStudentMarks1 = [50, 50, 50, 50, 50];
+        var myStudentAverage1 = calculateAverage(myStudentMarks1);
+        console.log(`My students average is ${myStudentAverage1}`);
+        console.log(this.determineGrade(myStudentAverage1));
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
