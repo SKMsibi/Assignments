@@ -1,11 +1,12 @@
 function calculateSmallerInteger(firstInteger, secondInteger){
 var smallerInteger;
 	if(firstInteger > secondInteger){
-		smallerInteger = secondInteger;
-		
+		smallerInteger = secondInteger;	
 	}else if(secondgInteger > firstInteger){
 		smallerInteger = firstInteger;
-	} 
-	return "The smaller integer between " + firstInteger + " and " + secondInteger + " is " + smallerInteger;
+	} else if (secondInteger == firstInteger){
+		smallerInteger = "Bothe numbers are equal";
+	}
+	return smallerInteger;
 } 
 console.log(calculateSmallerInteger(27, 9))
