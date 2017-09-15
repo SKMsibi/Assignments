@@ -1,14 +1,14 @@
 var maxNumber = 50;
 function evaluateNumbers(maxNumber) {
-    var numbers;
-    var evenOrOdd;
-    var results;
+    var numbers = 0;
+    var evenOrOdd = 0;
+    var results = " ";
     var i = 1;
     while (i <= maxNumber){
         numbers = i;
-    if (i % 2 == 0 && i > 1) {
+    if(i % 2 === 0 && i > 1) {
         evenOrOdd = "this is an even";
-    } else {
+    } else{
         evenOrOdd = "this is an odd"
     }
     results += `${numbers} ${evenOrOdd} "\n"`;
@@ -16,4 +16,4 @@ function evaluateNumbers(maxNumber) {
 }
 return results;
 }
-console.log(evaluateNumbers(10));
+console.log(evaluateNumbers(maxNumber));
