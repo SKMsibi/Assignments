@@ -5,7 +5,7 @@ var smallerInteger;
 	}else if(secondgInteger > firstInteger){
 		smallerInteger = firstInteger;
 	} else if (secondInteger == firstInteger){
-		smallerInteger = "Bothe numbers are equal";
+		smallerInteger = "Both numbers are equal";
 	}
 	return smallerInteger;
 } 
