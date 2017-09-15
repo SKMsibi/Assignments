@@ -4,7 +4,7 @@ function evaluateNumbers(maxNumber) {
     var evenOrOdd;
     var results;
     var i = 1;
-    while (i < maxNumber){
+    while (i <= maxNumber){
         numbers = i;
     if (i % 2 == 0 && i > 1) {
         evenOrOdd = "this is an even";
