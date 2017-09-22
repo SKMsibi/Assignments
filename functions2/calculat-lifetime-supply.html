@@ -7,11 +7,12 @@
     <script>
         function calculateSupply(age, amountPerDay) {
             var maxAge = 80;
+            var daysInYear = 365;
             var totalSupply = 0;
             var remainingLifeSpan = 0;
             remainingLifeSpan = maxAge - age;
-            totalSupply = Math.floor(amountPerDay);
-            return totalSupply * remainingLifeSpan;
+            totalSupply = Math.floor(amountPerDay) * daysInYear;
+            return  `You will need ${totalSupply * remainingLifeSpan} to last you until the ripe old age of ${maxAge}`;
         }
         console.log(calculateSupply(70, 4.7));
         console.log(calculateSupply(50, 8.9));
