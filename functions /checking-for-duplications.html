@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>checking for duplication</title>
+    <script>
+        var listOfItems = [1, 2, 3, 4, 5, 6, 7,];
+        function checkingDuplication(listOfItems) {
+            var matches = [];
+            var trueOrFalse = "";
+
+            for (var i = 0; i < listOfItems.length; i++) {
+                for (var e = listOfItems.length -1; e < listOfItems.length; e--) {
+                    if (listOfItems[i] === listOfItems[e]){
+                        trueOrFalse = true;
+                    }else {
+                        trueOrFalse = false;
+                    }
+                }
+            }
+            return trueOrFalse;
+        }
+        console.log(checkingDuplication(listOfItems));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
