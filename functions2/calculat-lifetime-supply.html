@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>calculate lifetime supply</title>
+    <script>
+        function calculateSupply(age, amountPerDay) {
+            var maxAge = 80;
+            var totalSupply = 0;
+            var remainingLifeSpan = 0;
+            remainingLifeSpan = maxAge - age;
+            totalSupply = Math.floor(amountPerDay);
+            return totalSupply * remainingLifeSpan;
+        }
+        console.log(calculateSupply(70, 4.7));
+        console.log(calculateSupply(50, 8.9));
+        console.log(calculateSupply(20, 3));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
