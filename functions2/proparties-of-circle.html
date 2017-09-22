@@ -5,15 +5,24 @@
 <head>
     <title>Proparties of a circle</title>
     <script>
+        var PI = 3.141592;
+
         function calcCircumfrence(radius) {
-            var diameter = radius * 2;
-            var PI = 3.141592;
-            var Circumfrence = PI * diameter;
+            var Circumfrence =  2 * PI * radius;
             return `The circumference is ${Circumfrence}`;
         }
+        function calcArea(radius) {
+            var area = PI * (radius * radius);
+            return `The area is ${area}`;
+        }
+
         console.log((calcCircumfrence(12)));
         console.log((calcCircumfrence(20)));
-        console.log((calcCircumfrence(9)));
+        console.log((calcCircumfrence(8)));
+        
+        console.log((calcArea(12)));
+        console.log((calcArea(20)));
+        console.log((calcArea(8)));        
     </script>
 </head>
 
