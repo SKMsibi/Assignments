@@ -9,17 +9,19 @@
             var Fahrenheit = (celsius * 9 / 5 + 32);
             return `${celsius}°C is ${Fahrenheit}°F`;
         }
-        function fahrenheitToCelsius(fahrenheit){
+
+        function fahrenheitToCelsius(fahrenheit) {
             var celsius = (fahrenheit - 32 * 5 / 9);
-            return `${Fahrenheit}°F is ${celsius}°C`;
+            return `${fahrenheit}°F is ${celsius}°C`;
         }
+
         console.log(celsiusToFahrenheit(20));
         console.log(celsiusToFahrenheit(40));
         console.log(celsiusToFahrenheit(60));
 
         console.log(fahrenheitToCelsius(50));
-        console.log(fahrenheitToCelsius(30));
         console.log(fahrenheitToCelsius(20));
+        console.log(fahrenheitToCelsius(60));
     </script>
 </head>
 
