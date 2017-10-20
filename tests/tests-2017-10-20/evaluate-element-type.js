@@ -18,7 +18,6 @@ function numbers(collection) {
     return finalAnswer;
 }
 
-console.log(numbers(4, 3,"ad", 3, 4, 4, 2));
-console.log(numbers(4,6,22,NaN,56));
-console.log(numbers("Officer","Soldier"));
-console.log(numbers(1,4,6,3,7,8));
+console.log(numbers(1, 4, 3, 2, 5));
+console.log(numbers(1, 3, NaN));
+console.log(numbers(1, "a", 3));
