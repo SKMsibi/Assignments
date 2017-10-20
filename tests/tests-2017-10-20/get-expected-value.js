@@ -1,5 +1,5 @@
 
-var name = "Cloe;"
+var name = "Cloe";
 function Person(name) {
     this.name = name;
 }
