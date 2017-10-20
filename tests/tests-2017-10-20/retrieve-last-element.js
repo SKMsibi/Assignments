@@ -1,8 +1,16 @@
-function retrieveLastElement(list){
-    list = Array.from(arguments);
-    finalAnswer = list[list.length - 1];
+function retrieveLastElement(list) {
+    var finalAnswer = "";
+    var args = Array.from(arguments);
+
+    if(list.length == undefined){
+        finalAnswer = args[args.length - 1];
+    }else{
+        finalAnswer = list[list.length -1];
+    }
     return finalAnswer;
 }
 
-console.log(retrieveLastElement(5,4,7,3,6,32));
-console.log(retrieveLastElement("Earth", "Moon", "Jupiter", "Pluto"));
+console.log(retrieveLastElement([1,2,3,4]));
+console.log(retrieveLastElement( "xyz" ));
+console.log(retrieveLastElement(43, 2, 3, 4));
+
