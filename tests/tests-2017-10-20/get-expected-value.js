@@ -1,13 +1,8 @@
 
-var name = "Cloe";
-function Person(name) {
-    this.name = name;
-}
-
-Person.greet = function (otherName) {
+var greet = function (otherName , name ){
     return "Hi " + otherName + ", my name is " + name;
 }
 
-console.log(Person.greet("Theo"));
-console.log(Person.greet("Paul"));
-console.log(Person.greet("Mags"));
+console.log(greet("Theo", "Sam"));
+console.log(greet("Paul", "Jacob"));
+console.log(.greet("Mags", "Smith"));
