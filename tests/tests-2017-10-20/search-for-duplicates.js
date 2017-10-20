@@ -5,18 +5,15 @@ function findDuplicates(list) {
         return a - b;
     });
     for (var t = 0; t < list.length; t++) {
-        for (var i = 1; i < list.length; i++) {
-            if (list[t] === list[i]) {
-                console.log(list[t] + "and" + list[i])
+        for (var u = 1; u < list.length; u++) {
+            if (list[t] == list[u++]) {
                 finalAnswer = true;
             } else {
                 finalAnswer = false;
             }
         }
     }
-
-
-    return list;
+    return finalAnswer;
 }
 
-console.log(findDuplicates('1', '3', '2', '2'));
+console.log(findDuplicates('1', '3', '2'));
