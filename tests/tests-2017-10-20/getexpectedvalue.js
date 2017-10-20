@@ -9,3 +9,5 @@ Person.greet = function (otherName) {
 }
 
 console.log(Person.greet("Theo"));
+console.log(Person.greet("Paul"));
+console.log(Person.greet("Mags"));
