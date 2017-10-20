@@ -19,5 +19,6 @@ function findDuplicates(list) {
 
 console.log(findDuplicates('1', '3', '2'));
 console.log(findDuplicates('1', '3', '3', '2'));
+console.log(findDuplicates(1,3,5,7,3,6,7));
 console.log(findDuplicates('history', 'science', 'art', 'history'));
 
