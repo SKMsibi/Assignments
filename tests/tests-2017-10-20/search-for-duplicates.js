@@ -16,4 +16,8 @@ function findDuplicates(list) {
     return finalAnswer;
 }
 
+
 console.log(findDuplicates('1', '3', '2'));
+console.log(findDuplicates('1', '3', '3', '2'));
+console.log(findDuplicates('history', 'science', 'art', 'history'));
+
