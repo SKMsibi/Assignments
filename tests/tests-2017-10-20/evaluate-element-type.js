@@ -7,12 +7,12 @@ function numbers(collection) {
         if (isNaN(collection[i])) {
             eachElementStatus += false;
         } else {
-            eachElementStatus += true; 
+            eachElementStatus += true;
         }
     }
-    if(eachElementStatus.search(/false/gi) >= 0){
+    if (eachElementStatus.search(/false/gi) >= 0) {
         finalAnswer = false;
-    }else{
+    } else {
         finalAnswer = true;
     }
     return finalAnswer;
