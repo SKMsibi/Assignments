@@ -1,7 +1,7 @@
 
 function Person(name, otherName) {
     this.name = name;
-    this.otherName = otherName;
+    this.otherName = otherName;this.otherName = otherName;
 }
 
 function greet() {
@@ -12,8 +12,7 @@ Person.prototype.greet = greet;
 
 
 var greetPerson1 = new Person('Gabriella', 'Sam');
-var greetPerson = new Person('Vusi', 'Thandi');
+var greetPerson2 = new Person('Vusi', 'Thandi');
 
 console.log(greetPerson1.greet());
-console.log(greetPerson.greet());
-
+console.log(greetPerson2.greet());
