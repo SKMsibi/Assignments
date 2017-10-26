@@ -1,5 +1,10 @@
 function lessThan(list,givenNumber){
-
-    return list;
+    var finalAnswer = [];
+    list.forEach(function(element) {
+     if(element < givenNumber){
+        finalAnswer.push(element);
+     }   
+    });
+    return finalAnswer;
 }
 
