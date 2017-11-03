@@ -1,13 +1,15 @@
-function lessThan(list,givenNumber){
+function list(list) {
+    this.list = list;
+}
+function lessThan(givenNumber) {
     var finalAnswer = [];
-    list.forEach(function(element) {
+    this.list.forEach(function(element) {
      if(element < givenNumber){
         finalAnswer.push(element);
      }   
     });
     return finalAnswer;
 }
-
-console.log(lessThan([1,2,4,6,11,78], 10));
-console.log(lessThan([12,45,75,4,7,86], 20));
-console.log(lessThan([3,11,5,76,34,5,3,54], 15));
+list.prototype.lessThan = lessThan;
+var collection = new list([1,2,3,4,73,32]);
+console.log(collection.lessThan(50));

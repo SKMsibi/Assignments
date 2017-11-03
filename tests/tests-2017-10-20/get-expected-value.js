@@ -1,7 +1,7 @@
 
 function Person(name, otherName) {
     this.name = name;
-    this.otherName = otherName;this.otherName = otherName;
+    this.otherName = otherName;
 }
 
 function greet() {
