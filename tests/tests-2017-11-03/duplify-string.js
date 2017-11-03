@@ -1,4 +1,4 @@
 function duplifyString(input, dupNum){
 return `${input} ${dupNum}`;
 }
-console.log(duplifyString("this is amazing", 3));
+console.log(duplifyString("Johannesburg", 3));
