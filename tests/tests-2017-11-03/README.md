@@ -7,7 +7,7 @@ var obj = {
     name:"Satoshi Nakamoto";
     prop:{
         name:"Adam Back";
-        getFullName:function{
+        getFullName:function(){
             return this.name;
         }
     }
