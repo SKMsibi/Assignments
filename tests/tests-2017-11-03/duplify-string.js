@@ -5,4 +5,4 @@ function duplifyString(input, dupNum){
     }
 return element;
 }
-console.log(duplifyString("city", 4));
+console.log(duplifyString("Johannesburg", 3));
