@@ -1,23 +1,15 @@
-// String.prototype.duplify = function(num){
-//     var element = "";
-//     for (var index = 0; index < num; index++) {
-//         element += this;
-//     }
-//     return element;
-// }
-// console.log("Johannesburg".duplify(5));
-
-var name = '"Vitalik Butterin'; 
+var fullname = '"Vittalik Butterin'; 
 var obj = {
-    name:"Satoshi Nakamoto",
+    fullname:"Satoshi Nakamoto",
     prop:{
-        name:"Adam Back",
+        fullname:"Adam Back",
         getFullName:function(){
-            return this.name;
+            return this.fullname;
         }
     }
+    
 };
 
 console.log(obj.prop.getFullName());
 var fullName = obj.prop.getFullName;
-console.log(fullName);
+console.log(fullName());
