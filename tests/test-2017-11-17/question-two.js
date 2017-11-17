@@ -8,4 +8,5 @@ function intAdd() {
             newArray.push(0);
         }
     });
+    return newArray.reduce(function (a, b) { return a + b });
 }
