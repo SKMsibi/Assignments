@@ -18,3 +18,4 @@ return 0;
 console.log(Add("1,0,2"));
 console.log(Add(""));
 console.log(Add("?,2,2"));
+console.log(Add("?,t,2,5"));
