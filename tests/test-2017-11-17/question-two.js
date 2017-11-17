@@ -1,3 +1,5 @@
 function intAdd(){
-    return Array.from(arguments);
+    var allArgs = Array.from(arguments);
+    var newArray = [];
+    return allArgs;
 }
