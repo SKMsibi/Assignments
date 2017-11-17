@@ -1,6 +1,9 @@
-function intAdd() {
-    var allArgs = Array.from(arguments);
+function Add(string) {
+    var allArgs = string.match(/\d/g);
     var newArray = [];
+    if(string.length < 1){
+        newArray.push(0);
+    }else{
     allArgs.forEach(function (element) {
         if (parseInt(element) >= 0) {
             newArray.push(parseInt(element));
@@ -10,6 +13,8 @@ function intAdd() {
     });
     return newArray.reduce(function (a, b) { return a + b });
 }
-console.log(intAdd("1", "0", "2"));
-console.log(intAdd("", "t", "2", "4"));
-console.log(intAdd("?", 2, "2"));
+return 0;
+}
+console.log(Add("1,0,2"));
+console.log(Add(""));
+console.log(Add("?,2,2"));
