@@ -17,7 +17,6 @@ function intAdd(stringnumbers) {
         return `negatives are not allowed ${filtered}`;
     }
     return ts;
-
 }
 
 
