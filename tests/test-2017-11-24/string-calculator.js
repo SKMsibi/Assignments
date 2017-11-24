@@ -14,7 +14,7 @@ function intAdd(stringnumbers) {
         }
     } else {
         var filtered = split.filter(function (element) { return element < 0; });
-        throw `negatives are not allowed ${filtered}`;
+        return `negatives are not allowed ${filtered}`;
     }
 }
 
