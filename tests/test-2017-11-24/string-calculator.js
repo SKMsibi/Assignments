@@ -1,14 +1,14 @@
-function intAdd(stringNumbers) {
+function intAdd(stringnumbers) {
     var finalAnswer = 0;
-    switch (stringNumbers.length) {
+    switch (stringnumbers.length) {
         case 0:
-            finalAnswer = stringNumbers.length;
+            finalAnswer = stringnumbers.length;
             break;
         case 1:
             finalAnswer = parseInt(stringNumbers);
             break;
         case 3:
-            var split = stringNumbers.split(",");
+            var split = stringnumbers.split(",");
             finalAnswer = split.reduce(function (a, b) {
                 return parseInt(a) + parseInt(b);
             });

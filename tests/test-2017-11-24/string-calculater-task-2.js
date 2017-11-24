@@ -1,9 +1,9 @@
-function intAdd(stringNumbers) {
+function intAdd(stringnumbers) {
     var finalAnswer = 0;
-    if (stringNumbers.length === 0) {
+    if (stringnumbers.length === 0) {
         return  0;
-    } else if (stringNumbers.length > 0) {
-        var sp = stringNumbers.split(",");
+    } else if (stringnumbers.length > 0) {
+        var sp = stringnumbers.split(",");
 
         return sp.reduce(function (a, b) {
             return parseInt(a) + parseInt(b);
