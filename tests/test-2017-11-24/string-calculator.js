@@ -7,7 +7,12 @@ function intAdd(stringNumbers) {
         case 1:
             finalAnswer = parseInt(stringNumbers);
             break;
-
+        case 3:
+            var split = stringNumbers.split(",");
+            finalAnswer = split.reduce(function (a, b) {
+                return parseInt(a) + parseInt(b);
+            });
+            break;
     }
     return finalAnswer;
 }
