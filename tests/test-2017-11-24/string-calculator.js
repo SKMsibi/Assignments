@@ -25,4 +25,4 @@ function intAdd(stringnumbers) {
 console.log(intAdd("//:\n1:2:3:-4"));
 console.log(intAdd("//?\n1?2?3"));
 console.log(intAdd("//?\n"));
-
+console.log(intAdd("//,\n1,2,3"));
