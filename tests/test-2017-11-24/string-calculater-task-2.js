@@ -14,4 +14,3 @@ function intAdd(stringnumbers) {
 console.log(intAdd("1"));
 console.log(intAdd("1,3,6,3,2"));
 console.log(intAdd(""));
-
