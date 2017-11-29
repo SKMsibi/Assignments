@@ -4,9 +4,7 @@ function intAdd(stringnumbers) {
     var allPositive = split.every(function (element) { return element >= 0 });
 
     while (allPositive) {
-        var finalAnswer = split.reduce(function (a, b) {
-            return parseInt(a) + parseInt(b);
-        });
+        var finalAnswer = split.reduce((a, b) => parseInt(a) + parseInt(b));
         return finalAnswer !== "" ? finalAnswer : 0;
     }
     var filtered = split.filter(function (element) { return element < 0; });
