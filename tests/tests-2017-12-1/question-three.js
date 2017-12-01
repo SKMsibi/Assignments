@@ -2,9 +2,9 @@ function filterSpecific(arr, num, str) {
     var finalAnswer = [];
     for (var index = 0; index < arr.length; index++) {
         if (str === "GreaterOrEqual") {
-            finalAnswer.push(arr[index] >= num);
+            arr[index] >= num ? finalAnswer.push(arr[index]) : arr.push();
         } else if (str === "LessThan") {
-            finalAnswer.push(arr[index] < num);             
+            arr[index] < num ? finalAnswer.push(arr[index]) : arr.push(); 
         }
     }
     return finalAnswer;
