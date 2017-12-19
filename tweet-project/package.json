@@ -1,0 +1,9 @@
+{
+  "name": "tweet-proj",
+  "version": "",
+  "dependencies": {
+    "express": "^4.16.2",
+    "query-string": "^5.0.1",
+    "request": "^2.83.0"
+  }
+}
